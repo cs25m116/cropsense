@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CropSense
+
+CropSense is a premium agriculture dashboard built with Next.js 16 and TypeScript. It includes a modern dark theme, dashboard analytics, soil and weather intelligence, map visualizations, and a custom UI component library.
+
+## Features
+
+- Next.js 16 app router project structure
+- Tailwind CSS with custom theme tokens
+- Reusable Radix UI component wrappers
+- Lucide icon support
+- Responsive agricultural dashboard layout
+- Charts and analytics for NDVI, soil, weather, and field status
 
 ## Getting Started
 
-First, run the development server:
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser. If port `3000` is already in use, Next.js will select the next available port.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` - Start development server
+- `npm run build` - Build production application
+- `npm run start` - Start the production server after build
+- `npm run lint` - Run ESLint
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+- `app/` - Next.js app router files and global styles
+- `components/` - Shared UI components and dashboard sections
+- `lib/` - Utility helpers
+- `styles/` - Tailwind or custom style files
+- `public/` - Static assets
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Dependencies
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project uses:
 
-## Deploy on Vercel
+- `next` 16
+- `react` 19
+- `tailwindcss` 4
+- `@radix-ui/react-*` packages for accessible UI primitives
+- `lucide-react` for icons
+- `recharts` for chart visualizations
+- `tw-animate-css` for global animation utilities
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Notes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- If the app fails to start because port `3000` is occupied, either stop the existing process or use the alternate port shown by Next.js.
+- Make sure dependencies are installed before running the dev server.
+
+## License
+
+This repository is ready for GitHub. Add your own license file if needed.
