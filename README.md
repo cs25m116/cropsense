@@ -11,6 +11,16 @@ CropSense is a premium agriculture dashboard built with Next.js 16 and TypeScrip
 - Responsive agricultural dashboard layout
 - Charts and analytics for NDVI, soil, weather, and field status
 
+## Dashboard Screenshot
+
+Add your dashboard screenshot as `public/dashboard-screenshot.png` and use the image below to display it in the README:
+
+![CropSense Dashboard](./public/dashboard-screenshot.png)
+
+## Frontend Only
+
+This repository contains only the frontend application. There is no backend/API server included in this project.
+
 ## Getting Started
 
 ### Install dependencies
